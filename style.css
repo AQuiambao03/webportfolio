@@ -76,10 +76,11 @@
 	background-size: cover;
 }
 
-#home #welcome{
+.fadein{
 	animation-name: home;
-	animation-timing-function:ease ;
-	animation-duration: 2s;
+	animation-timing-function:ease;
+	animation-duration: 3s;
+	
 }
 
 @keyframes home{
@@ -90,8 +91,6 @@
 		opacity: 1;
 	}
 }
-
-
 
 /*media queries*/
 @media (min-width: 320px){

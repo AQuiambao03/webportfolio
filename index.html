@@ -20,9 +20,11 @@
 
 		<title>Enigma Creatives</title>
 	</head>
+
+	<!-- Scrollspy added in Body -->
 	<body data-spy="scroll" data-target="#navBtn" data-offset="50">
 		<!-- Navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark fixed-top parallax">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top parallax fadein">
 			<a href="#home" class="navbar-brand text-light ">
 				<img class="logo img-fluid" src="logo.png" alt="">
 				<span class="font-weight-bold d-none d-xl-inline">ENIGMA</span> <span class="d-none d-xl-inline">CREATIVES
@@ -58,8 +60,10 @@
 
 			<!-- Home -->
 			<section class="row" id="home">
+
+				<!-- Jumbotron and Welcome Screen -->
 				<div class="col-12 jumbotron jumbotron-fluid text-center text-light parallax">
-					<div id="welcome">
+					<div id="welcome" class="fadein">
 						<h1 class="display-3 font-weight-bold">I DEVELOP COMPANY BRANDS</h1>
 						<p class="lead px-3">By building powerful websites and creating effective layouts and graphic designs.</p>
 
@@ -71,12 +75,14 @@
 			<!-- About -->
 			<section class="row align-items-center px-3 px-lg-5 my-5 my-lg-0" id="about">
 
+				<!-- Professional Photo auto Hides for Small Screen -->
 				<div class="col-12 col-xl-6 text-center align-self-end d-none d-xl-block">
 					<img src="./images/photo.png" class="img-fluid">
 				</div>
 
 				<div class="col-12 col-xl-6 align-self-center">
-						
+
+					<!-- About Me Text -->
 					<h1 class="display-3 mb-xl-5 d-inline-block border-bottom">ABOUT ME</h1>
 
 					<img src="./images/photo.jpg" class="img-fluid d-block d-none d-lg-block d-xl-none rounded-circle my-lg-3 mx-auto my-5">
@@ -106,6 +112,7 @@
 					<h1 class="display-3 font-weight-bold mb-3">PROJECTS</h1>
 				</div>
 				
+				<!-- Web Design -->
 				<div class="col-12 col-lg-4 align-self-center">
 					<div class="card mb-3">
 						<!-- Carousel -->
@@ -133,14 +140,15 @@
 
 					  <!-- Card Body -->
 					  <a class="text-decoration-none text-info" href="https://gitlab.com/angelito-quiambao" target="_blank">
-					  <div class="card-body">
-					    <h5 class="card-title">Website Projects</h5>
+					  <div class="card-body mb-2 mb-lg-3">
+					    <h5 class="card-title text-justify">Website Projects</h5>
 					    <p class="card-text">Created a website using the latest technology and trend (HTML 5, CSS 3, Javascript, etc.)</p>
 					  </div>
 					</div>
 					</a>
 				</div>
 
+				<!-- Graphic Design -->
 				<div class="col-12 col-lg-4 align-self-center">
 					<div class="card mb-3">
 						<!-- Carousel -->
@@ -167,14 +175,15 @@
 					  </div>
 
 					  <a class="text-decoration-none text-info" href="https://www.facebook.com/La-Ciudad-Cafe-101979025626477" target="_blank">
-					  <div class="card-body">
+					  <div class="card-body mb-2 mb-lg-3">
 					    <h5 class="card-title">Graphic Design Projects</h5>
-					    <p class="card-text">Created a logo design, brochure layout, website banner, and social media publication materials for different businesses.</p>
+					    <p class="card-text text-justify">Created a logo design, brochure, banner, and social media publication materials for different businesses.</p>
 					  </div>
 					</div>
 					</a>
 				</div>
 
+				<!-- Social Media Mangement -->
 				<div class="col-12 col-lg-4 align-self-center">
 					<div class="card mb-3">
 						<!-- Carousel -->
@@ -201,38 +210,43 @@
 					  </div>
 
 					  <a class="text-decoration-none text-info" href="https://www.instagram.com/pizzahub_paniqui/" target="_blank">
-					  <div class="card-body">
+					  <div class="card-body mb-2 mb-lg-3">
 					    <h5 class="card-title">Social Media Management Project</h5>
-					    <p class="card-text">Managing your online presence on different social media platforms (Facebook, Instagram, Twitter, LinkedIn, etc.).</p>
+					    <p class="card-text text-justify">Managing your online presence on different social media platforms (Facebook, Instagram, Twitter, LinkedIn, etc.).</p>
 					  </div>
 					</div>
 					</a>
 				</div>
 			</section>
 
-			<!-- contact -->
+			<!-- Contact -->
 			<section class="row px-2 px-lg-5 my-5" id="contact">
 				<div class="col-12 align-self-end text-dark text-center">
 					<h1 class="display-4 my-3 my-lg-5 py-lg-2">LET'S WORK TOGETHER!</h1>
 				</div>
 
+				<!-- Contact Form with HTML Validation -->
 				<div class="col-12 col-lg-6">
-					<form onsubmit="$('#thankyou').modal('show')" class="p-1">
+					<form onsubmit="$('#thankyou').modal('show')" class="p-3">
+
 						<!-- Fullname -->
 					  <div class="form-group">
 					    <label for="full_name" class="text-dark">Name</label>
 					    <input type="text" class="form-control" id="full_name" placeholder="Your Name" required>
 					  </div>
+
 					  	<!-- Email Address -->
 					  <div class="form-group">
 					    <label for="email" class="text-dark">Email address</label>
 					    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
 					  </div>
+
 					  	<!-- Contact Number -->
 					  <div class="form-group">
 					    <label for="contact_number" class="text-dark">Contact Number</label>
 					    <input type="number" class="form-control" id="contact_number" placeholder="+63 900 000 0000" min="0" required>
 					  </div>
+
 					  	<!-- Message Subject -->
 					  <div class="form-group">
 					    <label for="mesSub" class="text-dark">Message Subject</label>
@@ -242,6 +256,7 @@
 					    	<option>Book a Meeting</option>
 					    </select>
 					  </div>
+
 					  	<!-- Message Area -->
 					  <div class="form-group">
 					    <label for="message" class="text-dark">Message</label>
@@ -249,9 +264,9 @@
 					  </div>
 					  
 					  <!-- Submit -->
-					  <button type="submit" class="btn btn-dark d-block mx-auto">Send Email</button>
+					  <button type="submit" class="btn btn-dark d-block mx-auto my-3">Send Email</button>
 
-					  <!-- Modal -->
+					  <!-- Modal: the modal will pop-up if no empty fields-->
 					  <div class="modal fade" id="thankyou" tabindex="-1" aria-labelledby="thankyouLable" aria-hidden="true">
 					    <div class="modal-dialog">
 					      <div class="modal-content">
@@ -273,8 +288,11 @@
 					</form>
 				</div>
 
+				<!-- Google Maps -->
 				<div class="col-12 col-lg-6 px-lg-5">
 					<iframe class="pb-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.2657212309587!2d120.57717221533983!3d15.52387955794348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396c88b535832e9%3A0xfd154b212c866572!2sDolores%20Elementary%20School!5e0!3m2!1sen!2sph!4v1645056272080!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+					<!-- Added Information -->
 					<div class="row">
 							<div class="col-4 col-lg-4 text-center">
 								<button type="button" class="btn btn-lg btn-outline-primary rounded-circle mb-2" disabled>
@@ -306,10 +324,12 @@
 		<footer class="footer border-top border-color-dark px-4 parallax">
 			<div class="row">
 				
+				<!-- Footer Left -->
 				<div class="col-12 col-md-12 col-lg-4 col order-2 order-lg-1 align-self-center my-3 my-lg-0">
 					<a href="#home" class="text-light text-decoration-none"><span class="font-weight-bold">ENIGMA CREATIVES</span> <span>&copy; 2022</span></a>
 				</div>
 
+				<!-- Footer Center: Auto-hide for medium - small screens -->
 				<div class="col-12 col-md-12 col-lg-4 order-1 order-lg-2  align-self-center">
 					<h5 class="text-center text-light pt-2">CONNECT WITH ME</h5>
 					<div class="text-center">
@@ -328,10 +348,10 @@
 						<a href="https://twitter.com/CreativesEnigma" target="_blank" class="btn btn-outline-light rounded-circle  m-1">
 							<i class="bi bi-twitter"></i>
 						</a>
-
-					</div>
-							
+					</div>	
 				</div>
+
+				<!-- Footer Right -->
 				<div class="col-12 col-md-12 col-lg-4 col order-3 my-auto d-none d-xl-block">
 					<ul class="nav justify-content-end">
 						<li class="nav-item">
